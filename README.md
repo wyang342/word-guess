@@ -1,11 +1,11 @@
 # Exercise: Word Guess CSV
-The goal of this exercise is to refactor the included `word_guess.rb` to get its words from the included `words.csv`.
+The goal of this exercise is to refactor the included `word_guess.py` to get its words from the included `words.csv`.
 
 ## Playing the Game
-Run `$ ruby word_guess.rb` to start the game. Choose a difficulty level and then try to guess the word one letter at a time. You win when you complete the word, and lose if you run out of guesses.
+Run `$ python3 word_guess.py` to start the game. Choose a difficulty level and then try to guess the word one letter at a time. You win when you complete the word, and lose if you run out of guesses.
 
 ### Debug mode
-The `WordGuess` initializer accepts an optional boolean. Pass `true` to put the game in _debug_ mode, which will reveal the chosen word at the beginning of the game.
+The `WordGuess` initializer accepts an optional boolean. Pass `True` to put the game in _debug_ mode, which will reveal the chosen word at the beginning of the game.
 
 ## Requirements
 - Alter the game to get its words from the provided `words.csv`.
