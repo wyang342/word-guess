@@ -17,7 +17,7 @@ class WordGuess:
             'e' : ['dog','cat','bug','hat','cap','lit','kin','fan','fin','fun','tan','ten','tin','ton'],
             'm' : ['plain','claim','brine','crime','alive','bride','skine','drive','slime','stein','jumpy'],
             'h' : ['machiavellian','prestidigitation','plenipotentiary','quattuordecillion','magnanimous','unencumbered','bioluminescent','circumlocution']
-          }
+        }
 
         # ask the user to set the game mode
         self.mode = self.set_mode()
@@ -63,11 +63,11 @@ class WordGuess:
 
         # determine if the player has won or lost
         if self.won():
-          self.end_game(True)
+            self.end_game(True)
         elif self.lost():
-          self.end_game(False)
+            self.end_game(False)
         else: # play another turn if we haven't won or lost
-          self.play_turn()
+            self.play_turn()
 
     def set_mode(self):
         mode = ''
@@ -77,7 +77,7 @@ class WordGuess:
 
     def add_to_guessed(self,letter):
         if letter not in self.guessed:
-          self.guessed.append(letter)
+            self.guessed.append(letter)
 
     def end_game(self, won):
         if won: 
