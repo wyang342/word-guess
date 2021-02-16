@@ -9,7 +9,7 @@ The `WordGuess` initializer accepts an optional boolean. Pass `True` to put the 
 
 ## Requirements
 - Alter the game to get its words from the provided `words.csv`.
-- The CSV has three lines. The first entry on each line is the difficulty and every other entry is a word for that difficulty.
+- The CSV file has three lines. The first entry on each line is the difficulty and every other entry is a word for that difficulty.
   - __Example__: `e,cat,hat,bat,rat,sat,wat,nat,mat....`
   - The `e` is the difficulty (easy mode).
   - Everything else is a word for the easy difficulty
