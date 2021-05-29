@@ -15,6 +15,7 @@ class WordGuess:
         self.debug = debug
         self.words = {}
 
+        # reads the words and puts them in self.words
         with open('./words.csv', 'r') as csvfile:
             csv_reader = csv.reader(csvfile, delimiter=',')
             for row in csv_reader:
@@ -117,7 +118,7 @@ class WordGuess:
         for i, l in enumerate(self.word):
             if self.word[i] == letter:
                 self.user_word[i] = letter
-            elif self.word[i] == letter.upper():
+            elif self.word[i] == letter.upper():  # accounts for upper case letters
                 self.user_word[i] = letter.upper()
 
     def ask_for_letter(self):
@@ -128,4 +129,4 @@ class WordGuess:
         return letter
 
 
-WordGuess(True)
+WordGuess()
